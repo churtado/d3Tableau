@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="icon" href="http://www1.mazepoint.com/wp-content/uploads/2012/07/favicon.gif" type="image/x-icon">
-	<link rel="shortcut icon" href="http://www1.mazepoint.com/wp-content/uploads/2012/07/favicon.gif" type="image/x-icon">
-	
+
 	
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-	<script type='text/javascript' src='https://154.43.193.90/javascripts/api/tableau-2.min.js'></script>
+	<script type='text/javascript' src='https://public.tableau.com/javascripts/api/tableau-2.min.js'></script>
     <script type="text/javascript" src="d3.min.js"></script>
     <script type="text/javascript" src="d3.layout.js"></script>
     <link type="text/css" rel="stylesheet" href="style.css"/>
@@ -31,12 +29,12 @@
 		  <div id="footer">
 			Breach timeline graph
 			<div class="hint">mouseover hours to highlight, click an hour to filter on the right</div>
-			<div class="copyright">© Mazepoint 2015. All rights reserved.</div>
+			<div class="copyright">© Carlos Hurtado 2015. All rights reserved.</div>
 			<div class="logo"></div>​
 		  </div>
 		</div>
 		
-		<div id='tableauPlaceholder' style='width: 950px; height: 800px;'>
+		<div id='tableauPlaceholder' style='width: 1000px; height: 870px;'>
 		</div>
 	</div>
 	
@@ -47,7 +45,7 @@
     <script type="text/javascript">
 
 		var w = 800,
-			h = 800,
+			h = 870,
 			r1 = h / 2,
 			r0 = r1 - 80;
 
@@ -199,10 +197,10 @@
 
 		var viz;
 		var placeholderDiv = document.getElementById("tableauPlaceholder");
-		var url = "https://154.43.193.90/t/Demo/views/Breachdashboard/Breachdashboard?:embed=y&:showShareOptions=true&:display_count=no";
+		var url = "https://public.tableau.com/views/Breachdashboard/Breachdashboard?:embed=y&:display_count=no&:showShareOptions=false";
 		var options = {
-				width: 950,
-				height: 800,
+				width: 1000,
+				height: 870,
 				hideTabs: true,
 				hideToolbar: true,
 				onFirstInteractive: function () {
